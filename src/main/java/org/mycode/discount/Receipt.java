@@ -8,7 +8,9 @@ public class Receipt {
     private double total;
     private double discount;
     private double amountToPay;
-    public void setDate(Date date) { this.date = date; }
+    public void setDate(Date date) {
+        this.date = date;
+    }
     public void setTotal(double total) {
         this.total = total;
     }
