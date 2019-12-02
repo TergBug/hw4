@@ -1,25 +1,14 @@
-package org.mycode.Discount;
+package org.mycode.discount;
 
 import java.util.Date;
 import java.util.Objects;
 
 public class Receipt {
-    private String date;
+    private Date date;
     private double total;
     private double discount;
     private double amountToPay;
-    public Receipt(){
-        this.date = (new Date()).toString();
-    }
-    public String generateReceipt(){
-        String receiptStr = "";
-        receiptStr+="\n--- Your receipt ---";
-        receiptStr+="\nCurrent date: "+date;
-        receiptStr+="\nTotal: "+total;
-        receiptStr+="\nDiscount: "+discount;
-        receiptStr+="\nAmount to pay: "+amountToPay+"\n";
-        return receiptStr;
-    }
+    public void setDate(Date date) { this.date = date; }
     public void setTotal(double total) {
         this.total = total;
     }
@@ -34,6 +23,16 @@ public class Receipt {
     }
     public double getDiscount() {
         return discount;
+    }
+    @Override
+    public String toString(){
+        String receiptStr = "";
+        receiptStr+="\n--- Your receipt ---";
+        receiptStr+="\nDate: "+((date==null) ? "undefined" : date.toString());
+        receiptStr+="\nTotal: "+total;
+        receiptStr+="\nDiscount: "+discount;
+        receiptStr+="\nAmount to pay: "+amountToPay+"\n";
+        return receiptStr;
     }
     @Override
     public boolean equals(Object o) {

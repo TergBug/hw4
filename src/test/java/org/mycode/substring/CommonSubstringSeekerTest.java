@@ -1,4 +1,4 @@
-package org.mycode.Substring;
+package org.mycode.substring;
 
 import org.junit.Test;
 

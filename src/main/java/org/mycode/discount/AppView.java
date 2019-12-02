@@ -1,4 +1,4 @@
-package org.mycode.Discount;
+package org.mycode.discount;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class AppView {
     private final String patternNumber = "\\d+";
     public void inputTotalAmount(){
         BusinessLogic bl = new BusinessLogic();
-        System.out.println(bl.generateReceipt(validation(patternNumber, massageEnterTotal, massageEnterTotalWrong)).generateReceipt());
+        System.out.println(bl.generateReceipt(validation(patternNumber, massageEnterTotal, massageEnterTotalWrong)).toString());
     }
     private double validation(String pattern, String shownText, String shownTextIfWrong){
         Scanner scanner = new Scanner(System.in);

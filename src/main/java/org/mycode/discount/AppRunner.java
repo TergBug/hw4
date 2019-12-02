@@ -1,4 +1,4 @@
-package org.mycode.Discount;
+package org.mycode.discount;
 
 public class AppRunner {
     public static void main(String[] args) {

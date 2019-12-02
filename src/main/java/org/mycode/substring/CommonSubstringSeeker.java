@@ -1,4 +1,4 @@
-package org.mycode.Substring;
+package org.mycode.substring;
 
 public class CommonSubstringSeeker {
     public String getCommonSubstring(String s1, String s2){

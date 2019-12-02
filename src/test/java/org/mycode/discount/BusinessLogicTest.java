@@ -1,4 +1,4 @@
-package org.mycode.Discount;
+package org.mycode.discount;
 
 import org.junit.Before;
 import org.junit.Test;

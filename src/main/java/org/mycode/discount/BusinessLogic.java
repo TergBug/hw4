@@ -1,8 +1,11 @@
-package org.mycode.Discount;
+package org.mycode.discount;
+
+import java.util.Date;
 
 public class BusinessLogic {
     public Receipt generateReceipt(double total){
         Receipt receipt = new Receipt();
+        receipt.setDate(new Date());
         receipt.setTotal(total);
         if(total>0 && total<=500) receipt.setDiscount(5);
         else if(total>500 && total<=1000) receipt.setDiscount(10);
